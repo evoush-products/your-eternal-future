@@ -66,12 +66,12 @@
 	export default {
 		data(){
 			return {
-				event: ($nuxt.$router.path === '/event/anniversary' ? false : true),
+				event: (this.$router.path === '/event/anniversary' ? false : true),
 				users: {},
 				consults: [],
 				check: {},
 				status: '',
-				path: $nuxt.$route.name
+				path: this.$router.name
 			}
 		},
 		components: {
